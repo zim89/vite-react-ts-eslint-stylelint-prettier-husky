@@ -1,0 +1,43 @@
+.calendar {
+  width: 100%;
+  padding-top: rem(64px);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  /* padding-bottom: rem(32px); */
+
+  @media (min-width: $mantine-breakpoint-md) {
+    padding-top: rem(64px);
+    padding-left: rem(32px);
+    padding-right: rem(32px);
+  }
+
+  @media (min-width: $mantine-breakpoint-xl) {
+    padding-top: rem(38px);
+  }
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  background-color: var(--mantine-color-white);
+  border: 1px solid #dce3e5cc;
+  border-radius: rem(8px);
+}
+
+.weekday {
+  width: calc(100% / 7);
+  text-transform: uppercase;
+  margin-bottom: rem(15px);
+}
+
+.selectedDay {
+  padding: 4px rem(8px);
+  border-radius: rem(8px);
+  background-color: var(--mantine-color-blue-4);
+  line-height: rem(18px);
+  font-size: rem(16px);
+  color: var(--mantine-color-white);
+}
